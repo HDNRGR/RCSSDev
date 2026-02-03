@@ -34,7 +34,7 @@ html {
   padding: 2px 20px;
   z-index: 1000;
   transition: all 0.3s ease; /* enables animation */
-  font-family: 'eurostar', serif;
+  font-family: 'Midnight Moon', serif;
 }
 
 /* Animate navbar on hover */
@@ -85,7 +85,7 @@ html {
 /* Hero */
 .hero {
   height: 100vh;
-  background: url("Images/heroshot.png") center/cover no-repeat;
+  background: url("heroshot.png") center/cover no-repeat;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -95,8 +95,8 @@ html {
 }
 
 .hero-text h2 {
-  font-size: 4rem;
-  margin-bottom: -10px;
+  font-size: 3rem;
+  margin-bottom: 10px;
 }
 
 .hero-text p {
@@ -191,7 +191,7 @@ button.btn {
 }
 
 .about .info-box h3 {
-  font-family: 'eurostar', serif;
+  font-family: 'Arial', sans-serif; /* or your default font */
   font-weight: 600;
   font-size: 1.2rem;
   color: rgb(109, 109, 109); /* accent */
@@ -247,7 +247,7 @@ button.btn {
 }
 
 .experience .info-box h3 {
-  font-family: 'eurostar', serif;
+  font-family: 'Arial', sans-serif; /* or your default font */
   font-weight: 600;
   font-size: 1.2rem;
   color: rgb(109, 109, 109); /* accent */
@@ -256,7 +256,6 @@ button.btn {
   -webkit-text-fill-color: unset !important;
   text-shadow: none !important;
 }
-
 /* Contact */
 .contact {
   padding: 80px 20px;
@@ -338,25 +337,25 @@ footer {
 /* Fade-in left */
 .fade-left {
   opacity: 0;
-  transform: translateX(-250px);
+
   transition: opacity 1.3s ease 0.1s, transform 1.3s ease 0.2s; /* added delay */
 }
 
 .fade-left.visible {
   opacity: 1;
-  transform: translateX(0);
+
 }
 
 /* Fade-in right */
 .fade-right {
   opacity: 0;
-  transform: translateX(250px);
+
   transition: opacity 1.3s ease 0.1s, transform 1.3s ease 0.2s; /* added delay */
 }
 
 .fade-right.visible {
   opacity: 1;
-  transform: translateX(0);
+
 }
 
 /* Fade-in up */
@@ -451,6 +450,7 @@ h1, h2, h3 {
 h1, h2, h3 {
   position: relative;
   display: inline-block;
+  font-family: 'Midnight Moon', serif; /* fallback */
   background: linear-gradient(
     90deg,
     #bbb 0%,
@@ -469,6 +469,14 @@ h1, h2, h3 {
   to {
     background-position: 200% center;
   }
+}
+
+/* Load Evanescent */
+@font-face {
+  font-family: 'Midnight Moon';
+  src: url('eurostar.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
 }
 
 .split-sections {
@@ -512,6 +520,18 @@ h1, h2, h3 {
   color: #9c9c9c;
   font-size: 0.95rem;
   line-height: 1.6;
+}
+
+/* Override chrome effect for About section subheadings */
+.about .info-box h3 {
+  font-family: 'Arial', sans-serif; /* or your default font */
+  font-weight: 600;
+  font-size: 1.2rem;
+  color: rgb(109, 109, 109); /* accent */
+  background: none !important;
+  -webkit-background-clip: unset !important;
+  -webkit-text-fill-color: unset !important;
+  text-shadow: none !important;
 }
 
 /* Default states */
@@ -661,6 +681,23 @@ h1, h2, h3 {
 
 /* Hide navbar logo on smaller screens to keep single row */
 @media (max-width: 768px) {
+  .navbar .logo {
+    display: none; /* hide the text/logo */
+  }
+
+  /* Optional: adjust navbar padding so items are centered */
+  .navbar {
+    padding: 10px 20px;
+    justify-content: center; /* center the menu items */
+  }
+
+  .navbar ul {
+    gap: 10px; /* optional: adjust spacing between menu items */
+  }
+}
+
+/* Hide navbar logo on smaller screens to keep single row */
+@media (max-width: 768px) {
   .navbar {
     flex-wrap: nowrap;          
     justify-content: center;  /* center the items */
@@ -705,5 +742,4 @@ h1, h2, h3 {
     padding: 6px 12px;
     font-size: 0.85rem;
   }
-
 }
