@@ -34,6 +34,7 @@ html {
   padding: 2px 20px;
   z-index: 1000;
   transition: all 0.3s ease; /* enables animation */
+  font-family: 'eurostar', serif;
 }
 
 /* Animate navbar on hover */
@@ -190,7 +191,7 @@ button.btn {
 }
 
 .about .info-box h3 {
-  font-family: 'Arial', sans-serif; /* or your default font */
+  font-family: 'eurostar', serif;
   font-weight: 600;
   font-size: 1.2rem;
   color: rgb(109, 109, 109); /* accent */
@@ -246,7 +247,7 @@ button.btn {
 }
 
 .experience .info-box h3 {
-  font-family: 'Arial', sans-serif; /* or your default font */
+  font-family: 'eurostar', serif;
   font-weight: 600;
   font-size: 1.2rem;
   color: rgb(109, 109, 109); /* accent */
@@ -704,4 +705,5 @@ h1, h2, h3 {
     padding: 6px 12px;
     font-size: 0.85rem;
   }
+
 }
