@@ -34,7 +34,7 @@ html {
   padding: 2px 20px;
   z-index: 1000;
   transition: all 0.3s ease; /* enables animation */
-  font-family: 'eurostar', serif;
+  font-family: 'Midnight Moon', serif;
 }
 
 /* Animate navbar on hover */
@@ -450,7 +450,7 @@ h1, h2, h3 {
 h1, h2, h3 {
   position: relative;
   display: inline-block;
-  font-family: 'eurostar', serif; /* fallback */
+  font-family: 'Midnight Moon', serif; /* fallback */
   background: linear-gradient(
     90deg,
     #bbb 0%,
@@ -473,7 +473,7 @@ h1, h2, h3 {
 
 /* Load Evanescent */
 @font-face {
-  font-family: 'eurostar', serif;
+  font-family: 'Midnight Moon';
   src: url('eurostar.ttf') format('truetype');
   font-weight: normal;
   font-style: normal;
